@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<div class="text-center">
+					<h1>Landing page</h1>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod quae qui culpa dolorum earum aperiam! Ab commodi laudantium tenetur eum aliquam ut, quae in veniam nulla sit quisquam ipsam dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p>Dolorem ad quis sequi maxime officia, alias accusantium nostrum similique. Laborum aliquid cum cumque repellendus voluptatibus cupiditate facere, tempore saepe sit quisquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod quae qui culpa dolorum earum aperiam!</p>
+					<p>Ab commodi laudantium tenetur eum aliquam ut, quae in veniam nulla sit quisquam ipsam dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad quis sequi maxime officia, alias accusantium nostrum similique.</p>
+					<p>Laborum aliquid cum cumque repellendus voluptatibus cupiditate facere, tempore saepe sit quisquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ad quis sequi maxime officia, alias accusantium nostrum similique. Laborum aliquid cum cumque repellendus voluptatibus cupiditate facere, tempore saepe sit quisquam.</p>
+					<a href="/blog" class="btn bg-blue-500 hover:bg-blue-700 hover:text-white text-white font-bold py-2 px-4 rounded mt-4">Read More</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
